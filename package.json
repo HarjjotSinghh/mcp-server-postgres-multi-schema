@@ -1,11 +1,15 @@
 {
   "name": "mcp-server-postgres-multi-schema",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "MCP server for interacting with PostgreSQL databases, with support for multiple schemas",
   "license": "MIT",
   "author": "Harjot Singh Rana",
   "homepage": "https://github.com/HarjjotSinghh/mcp-server-postgres-multi-schema",
   "bugs": "https://github.com/HarjjotSinghh/mcp-server-postgres-multi-schema/issues",
+  "repository": "https://github.com/HarjjotSinghh/mcp-server-postgres-multi-schema",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "bin": {
     "mcp-server-postgres-multi-schema": "dist/index.js"
