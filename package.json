@@ -1,6 +1,6 @@
 {
   "name": "mcp-server-postgres-multi-schema",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "MCP server for interacting with PostgreSQL databases, with support for multiple schemas",
   "license": "MIT",
   "author": "Harjot Singh Rana",

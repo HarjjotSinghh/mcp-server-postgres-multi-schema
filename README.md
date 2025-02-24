@@ -47,7 +47,7 @@ npx -y mcp-server-postgres-multi-schema <database-url> [schemas]
 npx -y mcp-server-postgres-multi-schema postgresql://localhost/mydb
 
 # Connect with multiple schemas
-npx -y mcp-server-postgres-multi-schema postgresql://localhost/mydb "public,analytics,staging"
+npx -y mcp-server-postgres-multi-schema postgresql://localhost/mydb public,analytics,staging
 ```
 
 ## Usage with Claude Desktop
