@@ -34,7 +34,7 @@ The server provides schema information for each table across authorized schemas:
 The server requires a database URL and accepts a comma-separated list of schemas to expose:
 
 ```
-mcp-server-postgres <database-url> [schemas]
+npx -y mcp-server-postgres-multi-schema <database-url> [schemas]
 ```
 
 - **database-url**: PostgreSQL connection string (e.g., `postgresql://localhost/mydb`)
@@ -44,10 +44,10 @@ mcp-server-postgres <database-url> [schemas]
 
 ```bash
 # Connect with default public schema
-npx -y mcp-server-postgres postgresql://localhost/mydb
+npx -y mcp-server-postgres-multi-schema postgresql://localhost/mydb
 
 # Connect with multiple schemas
-npx -y mcp-server-postgres postgresql://localhost/mydb "public,analytics,staging"
+npx -y mcp-server-postgres-multi-schema postgresql://localhost/mydb "public,analytics,staging"
 ```
 
 ## Usage with Claude Desktop
@@ -63,7 +63,7 @@ Configure the "mcpServers" section in your `claude_desktop_config.json`:
       "command": "npx",
       "args": [
         "-y",
-        "server-postgres-multi-schema",
+        "mcp-server-postgres-multi-schema",
         "postgresql://localhost/mydb",
         "public,audit"
       ]
